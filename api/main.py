@@ -81,4 +81,4 @@ async def request(session, url):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1",workers=5)
+    uvicorn.run("main:app", host="127.0.0.1",workers=2)
