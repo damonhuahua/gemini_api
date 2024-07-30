@@ -55,8 +55,8 @@ def openai_chat(data: dict):
             {"role": "user", "content": prompt}
         ]
         )
-        text=completion.choices[0].message
-        response = {"content": text}
+        response=completion.choices[0].message
+        #response = {"content": text}
         return response
     except Exception as e:
         print("openai_chat:",e)
